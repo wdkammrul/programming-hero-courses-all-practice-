@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .fruits-container{
+         color: rgb(71, 255, 126);
+      }
+       .important-places{
+         color: red;
+       }
+    </style>
+  </head>
+  <body>
+     <header>
+           <h1> Wealcome to my DOM </h1>
+     </header>
+
+     <main id="main-container">
+        <section>
+               <h1>My awesome DOM</h1>
+            <ul>
+                  <li>Jalali set </li>
+                  <li>Safayat</li>
+                  <li>Bonobas</li>
+            </ul>
+        </section>
+        <section class="fruits-container">
+               <h1 id="fruits-title">Fruits I Like</h1>
+            <ul>
+                  <li>Apple </li>
+                  <li>Banana </li>
+                  <li>Carrot</li>
+            </ul>
+        </section>
+        <section class="places-container" id="parent">
+               <h1 id="places-title" class="text-center">Place I like to visit </h1>
+            <ul id="places-list">
+                  <li class="important-places">Sounderbon</li>
+                  <li class="important-places">Bandorbon</li>
+                  <li class="important-places">Katabon</li>
+                  <li> Salbon </li>
+            </ul>
+        </section>
+     </main>
+     <script src='js/dom.js'></script>
+     <script src="js/append.js"></script>
+     <script src="js/styleInJs.js"></script>
+     <!-- JAVASCRIPT SCRIPT  -->
+
+     <script>
+       const liCollection = document.getElementsByTagName('li');
+      //  console.log(liCollection);
+      for(const li of liCollection){
+         // এখানে লিস্টের ভিতরের লেখা সহ আউটপুট পাবে া
+         // console.log(li.innerText)
+      }
+
+      // এর মাধ্যমে একটি ইলিমেন্টের মধ্যে সবগুলো শো করবে । 
+      const allHeadings = document.getElementsByTagName('h1');
+      for(const h1 of allHeadings){
+         //  console.log(h1.innerText)
+      }
+
+
+      // const fruitsTitle = document.getElementById(fruits-title);
+      // fruitsTitle.innerText = 'fruits changed by JS';
+
+
+      // এর মাধ্যমে একটি ইলিমেন্টের মধ্যে একাধিক ক্লাস নেমকে একসাথে শো করবে । এর মাধ্যমে একটি ইলিমেন্টের মধ্যে একাধিক ক্লাস নেমকে একসাথে শো করবে । 
+      const places = document.getElementsByClassName('important-places');
+      for(const place of places){
+         // oll classes show 
+         // console.log(place)
+
+         // only innerText show 
+         // console.log(place.innerText)
+      }
+
+      // querySelectorAll 
+      const someLi = document.querySelectorAll('.fruits-container li')
+      // console.log(someLi)
+      for(const li of someLi){
+         // console.log(li.innerText)
+      }
+     </script>
+  </body>
+</html>

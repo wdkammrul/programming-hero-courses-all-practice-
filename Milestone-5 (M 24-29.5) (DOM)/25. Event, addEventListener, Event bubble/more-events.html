@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Events</title>
+  </head>
+  <body>
+    <h1>Explore More Events</h1>
+    <button id="btn-more">Events</button>
+    <input type="text" name="" id="text-field">
+
+    <script>
+        // practice: 1
+        // কোনো একটা ইনপুট ফিল্ডে যদি ক্লিক করি তাহলে নিচের লেখাটা দেখাবে । মাউস হোবার করলে দেখাবে ।
+        // document.getElementById('text-field').addEventListener('focus', function(){
+        //     console.log('Event triggered inside the input field')
+        // })
+
+        // practice:2
+        // // ইনপুট ফিল্ডের বাহিরে ক্লিক করলে ব্লার দেখাবে । 
+        // document.getElementById('text-field').addEventListener('blur', function(){
+        //     console.log('Event triggered inside the input field blur')
+        // })
+
+        // practice:3
+        // এখানের কোডের মাধ্যমে আমরা ইনপুটে যা লিখবো একটা সংখ্যা কম দেখতে পাবো 
+        // document.getElementById('text-field').addEventListener('keydown', function(){
+        //     console.log(event.target.value)
+        // })
+
+        // practice: 4 
+        // document.getElementById('text-field').addEventListener('keypress', function(){
+        //     console.log(event.target.value)
+        // })
+
+        // practice: 5 
+        // **** এটা আমরা ইউজ করবো । 
+        // ইনপুটে  কোনো কিছু লেখা ধরার জন্য আমরা কি আপ ব্যবহার করবো তাহলে যাই লিখবো তাই দেখাবে ।
+        document.getElementById('text-field').addEventListener('keyup', function(){
+            console.log(event.target.value)
+        })
+
+        
+        document.getElementById('btn-more').addEventListener('mousemove', function(){
+            console.log('Event Triggered');
+        })
+    </script>
+  </body>
+</html>

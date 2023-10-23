@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Daisy</title>
+  </head>
+  <body>
+
+    <div class="mt-10">
+        <h1>1. Button</h1>
+        <button>Click Me</button>
+        <button class="btn">Click Me</button>
+        <button class="btn btn-primary">Click Me</button>
+    </div>
+
+
+
+      <!--  accordian  -->
+      <section class="mt-14">
+          <h1>2. Accordian</h1>
+          <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" checked="checked" /> 
+            <div class="collapse-title text-xl font-medium">Do you like tailwind css ?
+                <Translate text="Click to open this one and close others" />
+            </div>
+            <div class="collapse-content"> 
+                <p>Yes</p>
+            </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                What types of smart phone are not smart ?
+                <Translate text="Click to open this one and close others" />
+            </div>
+            <div class="collapse-content"> 
+                <p>My grandma phone.</p>
+            </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-200">
+            <input type="radio" name="my-accordion-3" /> 
+            <div class="collapse-title text-xl font-medium">
+                Where do you live ?
+                <Translate text="Click to open this one and close others" />
+            </div>
+            <div class="collapse-content"> 
+                <p>Earth</p>
+            </div>
+       </div>
+      </section>
+
+
+       <!-- Card  -->
+       <section class="mt-10">
+          <h1>3. Card</h1>
+
+          <div>
+             <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="images/jacket-4.png" alt="Shoes" /></figure>
+                <div class="card-body">
+                <h2 class="card-title">Shoes!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+           <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+          </div>
+       </section>
+      
+
+
+
+
+
+  </body>
+</html>

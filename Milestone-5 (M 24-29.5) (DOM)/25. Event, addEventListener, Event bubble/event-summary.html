@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS DOM SUMMARY</title>
+  </head>
+  <body>
+    <h1>Final DOM Event Handler</h1>
+    <h3 id="handler-status">Default Text</h3>
+
+    <p id="input-text-display">Default Input Text</p>
+    <input id="input-field" type="text" />
+
+    <button id="btn-update">Update</button>
+    <br /><br />
+    <button onclick="handleOnClick()">
+      Handle event by add onclick function
+    </button>
+    <button id="event-listener">Handle event by addEventListener</button>
+    <script>
+      // option: 1
+      function handleOnClick() {
+        const handlerStatus = document.getElementById("handler-status");
+        handlerStatus.innerText =
+          "Handled by function attached on onclick attribute";
+      }
+
+      //   option: 2
+      document
+        .getElementById("event-listener")
+        .addEventListener("click", function () {
+          const handlerStatus = document.getElementById("handler-status");
+          handlerStatus.innerText = "Text updated by add Event listener button";
+        });
+
+      // Option: 2 recap or another
+      document
+        .getElementById("btn-update")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("input-field");
+          // console.log(inputField.value)
+          const inputText = inputField.value;
+          const p = document.getElementById("input-text-display");
+          p.innerText = inputText;
+
+          //   এইকোডের মাধ্যেমে ইনপুটের লেখাটা ক্লিয়ার হয়ে যাবে
+          inputField.value = "";
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+
+<!-- কামরুল নিচের প্রতিটা স্টাইলের কমান্ড উঠিয়ে লাইভ সার্ভারে দেখে নাও -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+
+            /* *************** justify-content ********************* */
+
+            /* justify-content: center; দুইপাশে সমান জায়গা রেখে লেখাগুলো মাঝে চলে যাবে  */
+            /* justify-content: start; লেখাগুলো প্রথমে চলে আসবে  */
+             /* justify-content: end; লেখাগুলো শেষে চলে আসবে  */
+             /* justify-content: space-between; লেখাগুলোর মাঝে জায়গা হয়ে যাবে  */
+             /* justify-content:space-around; এক্ষেত্রে প্রথমে জায়গা কম নিবে কিন্তু ছবির মাজে বেশি গ্যাপ হবে  */
+             /* justify-content: space-evenly; এখানে সমানভাবে স্পেস হবে  */
+            height: 250px;
+    
+
+
+            /* ***************** align items **********************  */
+            /* align-items: start; এটা শুরুতে স্টাইল হবে  */
+            /* align-items: end;  এটা শেষে স্টাইল হবে  */
+            /* align-items: center; এটা মাঝ বরাবর স্টাইল হবে  */
+
+
+            
+             /* ***************** flex *************************  */
+             /* flex-direction: row; এটা রো বরাবর লাইন হবে  */
+             /* flex-direction: row-reverse; এখানে রো বরাবর লাস্টে গিয়ে সংখ্যা উল্টে যাবে  */
+             /* flex-wrap: wrap; লেখাগুলো রেস্পন্সিভ করার জন্য একলাইনে জায়গা না হলে পরের লাইনে লেখা চলে যাবে  */
+             /* flex-direction: column; কলাম বরাবর হয়ে যাবে এটা ফর্মে ব্যবহার করবো  */
+
+        }
+        .box{
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-4</div>
+        <div class="box">Box-5</div>
+        <div class="box">Box-6</div>
+    </div>
+</body>
+</html>
+
+

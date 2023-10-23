@@ -1,0 +1,12 @@
+(Main Mark) 
+1. Navber
+2. Banner (play like the) (icon optional) 
+3. Online Games Funny Videos
+4. Play Instantly 
+5. 9 Button ( Hover korta hobe text color change)
+6. Footer (Link set icon)
+
+(Bonous Mark)
+1. Naver Logo Name Title a Show korta hobe 
+2. Online Games এর একটা বক্সে হোবার করলে যাতে ভিডিও আইকনটা দেখা যায় তা করতে হবে দরকার হলে চ্যাটজিপিটির হেল্প নিতে পারবো )
+3. Responsive korta hobe (mobile and medium device)

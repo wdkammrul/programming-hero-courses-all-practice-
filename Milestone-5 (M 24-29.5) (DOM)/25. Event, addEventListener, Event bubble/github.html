@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="secret-info">My Secret info</h1>
+    <input
+      type="text"
+      name=""
+      id="delete-confirm"
+      placeholder="Please type of delete"
+    />
+    <button id="btn-delete" disabled>Delete</button>
+
+    <script>
+      // এখানে একটা ইনপুট ও একটা বাটন আছে এখানে ইনপুটের মধ্যে যদি ডিলেট লেখা হয় তাহলে ডিলেট এনাবেল হবে না হয় ডিজেবলড থাকবে । আবার ডিলেট লিখে অতিরিক্ত কিছু লিখলেও ডিজেবলড হবে ।
+      document
+        .getElementById("delete-confirm")
+        .addEventListener("keyup", function (event) {
+          const text = event.target.value;
+          //  console.log(text)
+          const deleteButton = document.getElementById("btn-delete");
+          if (text === "delete") {
+            deleteButton.removeAttribute("disabled");
+          } else {
+            deleteButton.setAttribute("disabled", true);
+          }
+        });
+
+      // কোনো একটা ইলিমেন্ট যদি ডিলেট করতে চাই তাহলে এই কোড ব্যবহার করতে হবে ।
+      document
+        .getElementById("btn-delete")
+        .addEventListener("click", function () {
+          const secret = document.getElementById("secret-info");
+          secret.style.display = "none";
+        });
+    </script>
+  </body>
+</html>

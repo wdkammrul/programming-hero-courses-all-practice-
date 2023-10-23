@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tour of DOM</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+     <header>
+           <h1> Wealcome to my DOM </h1>
+     </header>
+
+     <main>
+        <h1>My awesome DOM</h1>
+        <ul>
+            <li>Jalali set </li>
+            <li>Safayat</li>
+            <li>Bonobas</li>
+        </ul>
+     </main>
+     <script src='js/dom.js'></script>
+     <!-- JAVASCRIPT SCRIPT  -->
+
+     <script>
+       const liCollection = document.getElementsByTagName('li');
+      //  console.log(liCollection);
+      for(const li of liCollection){
+         // এখানে লিস্টের ভিতরের লেখা সহ আউটপুট পাবে া
+         console.log(li.innerText)
+      }
+
+      const allHeadings = document.getElementsByTagName('h1');
+      for(const h1 of allHeadings){
+          console.log(h1.innerText)
+      }
+     </script>
+  </body>
+</html>

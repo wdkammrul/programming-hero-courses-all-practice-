@@ -1,0 +1,15 @@
+Main Mark
+1. Navber all rounded
+2. Banner Section (Exotic tastes at your doorstep) Slider use
+3. Deal of the day (taimer use)
+4. Meet the team section 
+5. Footer (fruit burst) logo (min 3) 
+
+
+Bonous Mark
+1. Banner er nichar part 
+2. Deal of the day (Detils a click korla Modal Red Dragon open hobe)
+3. Why Choose Us (All section)
+4. Responsive Mobile Devices 
+5. Tablet er jonno nija korta hobe 
+
