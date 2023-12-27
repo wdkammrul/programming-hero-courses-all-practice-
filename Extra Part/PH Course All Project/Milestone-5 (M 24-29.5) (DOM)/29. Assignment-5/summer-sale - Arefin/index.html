@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+    </style>
+</head>
+
+<body class="font-WorkSans">
+    <header>
+        <div class="hero h-218 bg-yellow-50">
+            <div class="hero-content max-w-full gap-16 flex-col py-12 lg:flex-row-reverse">
+                <img src="/images/Summer 1.png" class="max-w-3xl rounded-lg" />
+                <div>
+                    <h2 class="font-sans text-3xl font-medium text-center">---SALE FEVER---</h2>
+                    <h2 class="text-6xl text-center font-bold mt-10">Purchase TK 200 or<br>above & get <span
+                            class="text-[#E527B2]">20% off</span></h2>
+                    <h3 class="text-2xl font-medium text-center mt-14">Use Promo Code <span
+                            class="bg-[#E527B2] text-white px-8 py-4 ml-4 rounded-lg">SELL200</span></h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-[#F8F8F8] pt-32">
+        <section class="grid grid-cols-4 w-10/12 mx-auto gap-6 pb-44">
+            <!-- product Section -->
+            <div class="col-span-3">
+
+                <!-- KitchenWare Section -->
+                <div>
+                    <h3 class="text-5xl font-semibold">Kitchenware</h3>
+                    <div class="grid grid-cols-3 gap-6 mt-12">
+                        <!-- First Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod1.png" alt=""
+                                    class="rounded-xl px-28 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">K. Accessories</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">39.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Second Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod2.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">K. Accessories</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">25.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Third Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod3.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Home Cooker</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">49.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sportswear Section -->
+                <div class="mt-14">
+                    <h3 class="text-5xl font-semibold">Sportswear</h3>
+                    <div class="grid grid-cols-3 gap-6 mt-12">
+                        <!-- First Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod4.png" alt=""
+                                    class="rounded-xl px-28 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Sports Back Cap</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">49.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Second Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod5.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Full Jersey Set</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">69.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Third Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod6.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Sports cates</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">159.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Furniture Section -->
+                <div class="mt-14">
+                    <h3 class="text-5xl font-semibold">Furniture</h3>
+                    <div class="grid grid-cols-3 gap-6 mt-12">
+                        <!-- First Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod7.png" alt=""
+                                    class="rounded-xl px-28 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Single Relax Chair</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">185.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Second Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod8.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Children play</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">299.00</span> TK</p>
+                            </div>
+                        </div>
+                        <!-- Third Product -->
+                        <div onclick="addToCert(this)" class="bg-white rounded-xl px-2 pb-4">
+                            <div>
+                                <img src="./images/prod9.png" alt=""
+                                    class="rounded-xl px-24 py-8 mx-auto my-5 bg-[#F8F8F8]" srcset="">
+                            </div>
+                            <div class="text-center">
+                                <div class="rating">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 id="card_name" class="font-WorkSans text-xl font-semibold">Flexible Sofa</h2>
+                                <p class="text-xl font-normal font-WorkSans text-[#11111180]"><span
+                                        id="card_value">339.00</span> TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cert Section -->
+            <div class="col-span-1">
+                <div class="bg-white mt-24 rounded-xl p-6">
+                    <h3 class="text-2xl font-medium">Have coupon?</h3>
+                    <input id="coupon-code" class="py-4 px-5 mt-5 border border-r-0 border-gray-300 rounded-l-xl"
+                        type="text" placeholder="Coupon Code">
+                    <button id="coupon-btn" onclick="couponCode(this)"
+                        class=" text-white text-xl font-semibold font-WorkSans bg-gray-400 px-5 ml-0 py-4 rounded-r-xl"
+                        disabled>Apply</button>
+                </div>
+                <div class="bg-white mt-6 rounded-xl p-6">
+                    <ol class="list-decimal pl-6 text-2xl font-medium pb-5" id="product-list">
+
+                    </ol>
+                    <hr>
+                    <p class="text-2xl text-[#11111180] font-WorkSans pt-3"><span class="text-black font-medium">Total
+                            Price:</span> <span id="total-price">0.00</span>TK</p>
+                    <p class="text-2xl text-[#11111180] font-WorkSans py-3"><span
+                            class="text-black font-medium">Discount:</span> <span id="discount-price">0.00</span>TK</p>
+                    <p class="text-2xl text-[#11111180] font-WorkSans pb-3"><span
+                            class="text-black font-medium">Total:</span> <span id="grand-total">0.00</span>TK</p>
+                    <hr class="mb-4">
+                    <div class="w-full mt-4">
+
+                        <button id="purchase-btn"
+                            class="bg-gray-300 px-16 py-4  rounded-lg ml-9 text-white font-semibold text-xl text-center" onclick="my_modal_1.showModal()"
+                            disabled>Make Purchase</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- Modal Box -->
+        <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box py-24 px-11">
+                <img src="./images/congo.png" class="mx-auto py-5" alt="" srcset="">
+              <h3 class="font-bold text-5xl text-center">Congratulations</h3>
+              <p class="py-4 text-center">Your Purchase the product</p>
+              <div class="w-full">
+                <!-- if there is a button in form, it will close the modal -->
+                <button onclick="resetBtn()" class="btn bg-[#E527B2] mx-32 mt-6 text-white px-11 py-4">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+        <!-- Modal Box -->
+    </footer>
+    <script src="./js/cert.js"></script>
+</body>
+
+</html>
